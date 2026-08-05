@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prakash-portfolio.prakash-adhikari65.workers.dev/sitemap.xml
+
+# AI / agent-oriented summary of this site
+# https://prakash-portfolio.prakash-adhikari65.workers.dev/llms.txt

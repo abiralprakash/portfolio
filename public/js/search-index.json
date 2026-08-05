@@ -1,0 +1,429 @@
+[
+  {
+    "t": "Nepal IP Management System",
+    "d": "Production LegalTech SaaS — trademarks, matters, deadlines, OCR",
+    "u": "/products/nepal-ipms.html",
+    "k": "nepalipms legal saas cloudflare d1 ocr trademark search production",
+    "c": "product"
+  },
+  {
+    "t": "AI OCR Document Intelligence",
+    "d": "Bulletin PDF intake with human review — product page",
+    "u": "/products/ocr-engine.html",
+    "k": "ocr ai document intelligence extraction classification review",
+    "c": "product"
+  },
+  {
+    "t": "ScholarQuest",
+    "d": "Study-abroad education platform",
+    "u": "/products/scholarquest.html",
+    "k": "education scholarquest students counselling",
+    "c": "product"
+  },
+  {
+    "t": "NepalIPMS case study",
+    "d": "How the legal workflow became a software platform",
+    "u": "/case/nepal-ipms.html",
+    "k": "case study legaltech build architecture",
+    "c": "product"
+  },
+  {
+    "t": "OCR Engine case study",
+    "d": "Why OCR is not enough for document intelligence",
+    "u": "/case/ai-ocr-engine.html",
+    "k": "ocr case study pipeline azure",
+    "c": "product"
+  },
+  {
+    "t": "Global Law case study",
+    "d": "Knowledge platform, not just a website",
+    "u": "/case/global-law.html",
+    "k": "global law cms seo publishing",
+    "c": "product"
+  },
+  {
+    "t": "Architecture gallery",
+    "d": "Interactive OCR pipeline and system diagrams",
+    "u": "/architecture.html",
+    "k": "architecture cloudflare ocr diagram workers d1 r2",
+    "c": "engineering"
+  },
+  {
+    "t": "Why Cloudflare D1",
+    "d": "Decision: edge SQLite for small-team LegalTech",
+    "u": "/decisions.html",
+    "k": "cloudflare d1 decision tradeoff database",
+    "c": "decision"
+  },
+  {
+    "t": "Exact matching vs fuzzy",
+    "d": "Decision: accuracy first on 130K trademark search",
+    "u": "/decisions.html",
+    "k": "search fts trademark exact matching decision",
+    "c": "decision"
+  },
+  {
+    "t": "Building NepalIPMS at production scale",
+    "d": "Engineering notes — APIs, migrations, firm desks",
+    "u": "/engineering/building-nepalipms-production.html",
+    "k": "engineering nepalipms production scale",
+    "c": "engineering"
+  },
+  {
+    "t": "Designing OCR pipelines",
+    "d": "Engineering notes — layout OCR and review queues",
+    "u": "/engineering/designing-ocr-pipelines.html",
+    "k": "engineering ocr pipeline bilingual",
+    "c": "engineering"
+  },
+  {
+    "t": "Cloudflare production architecture",
+    "d": "Workers, D1, R2 migration without downtime",
+    "u": "/engineering/cloudflare-production.html",
+    "k": "cloudflare workers edge migration engineering",
+    "c": "engineering"
+  },
+  {
+    "t": "Building 130k search",
+    "d": "FTS5 and latency for live client calls",
+    "u": "/engineering/building-130k-search.html",
+    "k": "search fts5 trademark engineering",
+    "c": "engineering"
+  },
+  {
+    "t": "AI features responsibly",
+    "d": "Retrieval-first, human-in-the-loop",
+    "u": "/engineering/ai-features-users-need.html",
+    "k": "ai retrieval guardrails engineering",
+    "c": "engineering"
+  },
+  {
+    "t": "Software for legal workflows",
+    "d": "Domain models that mirror the desk",
+    "u": "/engineering/software-for-legal-workflows.html",
+    "k": "legal ux workflow domain model",
+    "c": "engineering"
+  },
+  {
+    "t": "Database optimization",
+    "d": "Migrations and performance under firm load",
+    "u": "/engineering/database-optimization.html",
+    "k": "database d1 migrations engineering",
+    "c": "engineering"
+  },
+  {
+    "t": "AI Document Intelligence research",
+    "d": "Why extraction ≠ understanding in legal workflows",
+    "u": "/research/ai-document-intelligence-legal.html",
+    "k": "research ocr legal document intelligence hypothesis",
+    "c": "research"
+  },
+  {
+    "t": "Register search accuracy research",
+    "d": "Accuracy over cleverness at trademark scale",
+    "u": "/research/register-search-accuracy.html",
+    "k": "research search exact matching trademark",
+    "c": "research"
+  },
+  {
+    "t": "Research notes index",
+    "d": "Investigations before products are built",
+    "u": "/research/",
+    "k": "research lab why products exist",
+    "c": "research"
+  },
+  {
+    "t": "Document Intelligence Pattern",
+    "d": "Input → extraction → understanding → action",
+    "u": "/patterns.html#document-intelligence",
+    "k": "pattern ocr document intelligence",
+    "c": "pattern"
+  },
+  {
+    "t": "Human + AI Review Pattern",
+    "d": "Suggestion → verification → learning",
+    "u": "/patterns.html#human-ai-review",
+    "k": "pattern human ai review guardrails",
+    "c": "pattern"
+  },
+  {
+    "t": "Workflow Automation Pattern",
+    "d": "Trigger → decision → action → feedback",
+    "u": "/patterns.html#workflow-automation",
+    "k": "pattern automation workflow",
+    "c": "pattern"
+  },
+  {
+    "t": "AI Product Patterns",
+    "d": "Reusable knowledge library",
+    "u": "/patterns.html",
+    "k": "patterns ai product builders",
+    "c": "pattern"
+  },
+  {
+    "t": "Thinking",
+    "d": "Personal essays on useful software and AI",
+    "u": "/thinking/",
+    "k": "thinking essays ux workflows complexity",
+    "c": "thinking"
+  },
+  {
+    "t": "Philosophy",
+    "d": "Longer product philosophy",
+    "u": "/philosophy.html",
+    "k": "philosophy product thinking",
+    "c": "thinking"
+  },
+  {
+    "t": "Notion knowledge teardown",
+    "d": "How Notion structures knowledge",
+    "u": "/teardowns/notion-knowledge.html",
+    "k": "teardown notion knowledge blocks",
+    "c": "thinking"
+  },
+  {
+    "t": "Linear workflows teardown",
+    "d": "How Linear designs workflows",
+    "u": "/teardowns/linear-workflows.html",
+    "k": "teardown linear workflow speed",
+    "c": "thinking"
+  },
+  {
+    "t": "AI assistant context teardown",
+    "d": "How AI assistants manage context",
+    "u": "/teardowns/ai-assistant-context.html",
+    "k": "teardown ai memory context",
+    "c": "thinking"
+  },
+  {
+    "t": "SaaS complexity teardown",
+    "d": "How modern SaaS reduces complexity",
+    "u": "/teardowns/saas-reduce-complexity.html",
+    "k": "teardown saas defaults complexity",
+    "c": "thinking"
+  },
+  {
+    "t": "Design system",
+    "d": "Typography, layout, principles",
+    "u": "/design-system.html",
+    "k": "design system newsreader editorial principles",
+    "c": "thinking"
+  },
+  {
+    "t": "Founder brief",
+    "d": "Problems I solve and how I work with founders",
+    "u": "/founders.html",
+    "k": "founders brief ai products automation",
+    "c": "product"
+  },
+  {
+    "t": "Start here",
+    "d": "Guided paths for founders, engineers, recruiters",
+    "u": "/start.html",
+    "k": "start guided onboarding founders engineers",
+    "c": "product"
+  },
+  {
+    "t": "Technical stack",
+    "d": "Frontend, backend, AI, principles",
+    "u": "/stack.html",
+    "k": "stack react typescript cloudflare workers d1 r2 ocr",
+    "c": "engineering"
+  },
+  {
+    "t": "Capabilities matrix",
+    "d": "AI, product engineering, UX, infrastructure",
+    "u": "/capabilities.html",
+    "k": "capabilities ai ocr ux saas workflows",
+    "c": "product"
+  },
+  {
+    "t": "Public changelog",
+    "d": "Shipped portfolio and product improvements",
+    "u": "/changelog.html",
+    "k": "changelog release",
+    "c": "product"
+  },
+  {
+    "t": "The Lab",
+    "d": "Experiments: agents, OCR, search, automation",
+    "u": "/lab.html",
+    "k": "lab experiments agents",
+    "c": "research"
+  },
+  {
+    "t": "Now",
+    "d": "Current focus and next experiments",
+    "u": "/now.html",
+    "k": "now focus ai workflows",
+    "c": "product"
+  },
+  {
+    "t": "Roadmap",
+    "d": "Building now, exploring, long-term direction",
+    "u": "/roadmap.html",
+    "k": "roadmap ai agents knowledge",
+    "c": "product"
+  },
+  {
+    "t": "Product journal",
+    "d": "What changed, why it mattered, lessons",
+    "u": "/journal/",
+    "k": "journal build log lessons",
+    "c": "product"
+  },
+  {
+    "t": "Diagrams",
+    "d": "Visual index — OCR, search, SaaS, AI workflow",
+    "u": "/diagrams.html",
+    "k": "diagrams pipeline architecture",
+    "c": "engineering"
+  },
+  {
+    "t": "Playground",
+    "d": "Working demos — OCR, search, AI review, loan",
+    "u": "/playground.html",
+    "k": "playground demos ocr search",
+    "c": "engineering"
+  },
+  {
+    "t": "Contributions",
+    "d": "Open source, writing, teaching — real only",
+    "u": "/contributions.html",
+    "k": "contributions open source teaching",
+    "c": "thinking"
+  },
+  {
+    "t": "Activity",
+    "d": "Real GitHub, writing, and product releases",
+    "u": "/activity.html",
+    "k": "activity github writing",
+    "c": "thinking"
+  },
+  {
+    "t": "Subscribe",
+    "d": "Notes on AI products, systems, and building",
+    "u": "/subscribe.html",
+    "k": "subscribe newsletter notes",
+    "c": "thinking"
+  },
+  {
+    "t": "Profile",
+    "d": "Executive profile and career timeline",
+    "u": "/profile.html",
+    "k": "profile timeline skills",
+    "c": "product"
+  },
+  {
+    "t": "Product decisions",
+    "d": "Context, decision, tradeoff library",
+    "u": "/decisions.html",
+    "k": "decisions tradeoffs",
+    "c": "decision"
+  },
+  {
+    "t": "System thinking",
+    "d": "Data, AI, and product system chains",
+    "u": "/systems.html",
+    "k": "systems data ai product",
+    "c": "engineering"
+  },
+  {
+    "t": "Featured insights",
+    "d": "Curated research, engineering, decisions, patterns",
+    "u": "/#insights",
+    "k": "insights curated homepage",
+    "c": "thinking"
+  },
+  {
+    "t": "Founder notes",
+    "d": "Product lessons from real builds",
+    "u": "/founder-notes/",
+    "k": "founder notes nepalipms lessons",
+    "c": "thinking"
+  },
+  {
+    "t": "Why I built NepalIPMS",
+    "d": "Founder note — desk problem to platform",
+    "u": "/founder-notes/why-i-built-nepalipms.html",
+    "k": "founder nepalipms why",
+    "c": "thinking"
+  },
+  {
+    "t": "Proof of work",
+    "d": "Problem, system, evidence, links — compact",
+    "u": "/proof.html",
+    "k": "proof evidence recruiters founders",
+    "c": "product"
+  },
+  {
+    "t": "Principles",
+    "d": "Personal operating system — product, engineering, AI",
+    "u": "/principles.html",
+    "k": "principles operating system how I work",
+    "c": "thinking"
+  },
+  {
+    "t": "Contact",
+    "d": "Intent-based contact — build, improve, architecture, collaborate",
+    "u": "/contact.html",
+    "k": "contact email founders",
+    "c": "product"
+  },
+  {
+    "t": "Workflow evidence",
+    "d": "Before → workflow → after for flagship products",
+    "u": "/workflows/",
+    "k": "workflow walkthrough nepalipms ocr",
+    "c": "product"
+  },
+  {
+    "t": "2026 Builder Report",
+    "d": "Annual reflection — products, lessons, research",
+    "u": "/reports/2026.html",
+    "k": "report annual 2026 archive",
+    "c": "thinking"
+  },
+  {
+    "t": "Compare products",
+    "d": "NepalIPMS vs OCR vs ScholarQuest",
+    "u": "/compare.html",
+    "k": "compare products technical",
+    "c": "product"
+  },
+  {
+    "t": "System status",
+    "d": "Public health labels — portfolio, NepalIPMS, OCR",
+    "u": "/status.html",
+    "k": "status operational production",
+    "c": "product"
+  },
+  {
+    "t": "Evidence collection",
+    "d": "Claim → documentation — not testimonials",
+    "u": "/evidence.html",
+    "k": "evidence proof documentation",
+    "c": "product"
+  },
+  {
+    "t": "Technology evolution",
+    "d": "2018–2026 growth narrative",
+    "u": "/evolution.html",
+    "k": "evolution timeline react cloudflare ai",
+    "c": "engineering"
+  },
+  {
+    "t": "Portfolio assistant",
+    "d": "Guided explorer — portfolio data only",
+    "u": "/#assistant",
+    "k": "assistant guided explorer",
+    "c": "thinking"
+  },
+  {
+    "t": "Ask me about",
+    "d": "AI products, LegalTech, OCR, Cloudflare, SaaS",
+    "u": "/#ask",
+    "k": "ask me about topics contact",
+    "c": "thinking"
+  }
+]

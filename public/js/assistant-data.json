@@ -1,0 +1,80 @@
+{
+  "prompts": [
+    {"q": "What AI projects have you built?", "id": "ai-projects"},
+    {"q": "Show me production LegalTech", "id": "legaltech"},
+    {"q": "How do you make architecture decisions?", "id": "decisions"},
+    {"q": "Where should a founder start?", "id": "founder"},
+    {"q": "What are you building now?", "id": "now"},
+    {"q": "How does OCR document intelligence work?", "id": "ocr"}
+  ],
+  "answers": {
+    "ai-projects": {
+      "title": "AI systems in the portfolio",
+      "body": "Three relevant systems — only what is documented here:",
+      "links": [
+        {"t": "AI OCR Engine", "d": "Document intelligence with human review", "u": "/products/ocr-engine.html"},
+        {"t": "NepalIPMS workflow automation", "d": "Deadlines, intake, production LegalTech host", "u": "/products/nepal-ipms.html"},
+        {"t": "Search intelligence", "d": "Exact-first register search at 130K+ scale", "u": "/engineering/building-130k-search.html"}
+      ]
+    },
+    "legaltech": {
+      "title": "Production LegalTech",
+      "body": "Shipped systems used by IP practice desks:",
+      "links": [
+        {"t": "NepalIPMS", "d": "Practice platform — matters, deadlines, register", "u": "/products/nepal-ipms.html"},
+        {"t": "OCR intake", "d": "Bulletin pipeline inside NepalIPMS", "u": "/products/ocr-engine.html"},
+        {"t": "Global Law", "d": "Firm CMS and knowledge publishing", "u": "/case/global-law.html"},
+        {"t": "Proof of work", "d": "Compact evidence rows", "u": "/proof.html"}
+      ]
+    },
+    "decisions": {
+      "title": "How decisions get made",
+      "body": "Tradeoffs are documented — context, choice, cost:",
+      "links": [
+        {"t": "Decisions library", "d": "D1, exact matching, OCR pipeline", "u": "/decisions.html"},
+        {"t": "Principles", "d": "Product, engineering, and AI operating system", "u": "/principles.html"},
+        {"t": "Engineering notes", "d": "Production-scale writeups", "u": "/engineering/"}
+      ]
+    },
+    "founder": {
+      "title": "Founder starting path",
+      "body": "A short guided route to proof, then conversation:",
+      "links": [
+        {"t": "Founder journey", "d": "Step-by-step on Start here", "u": "/start.html#journey-founder"},
+        {"t": "Founder brief", "d": "Problems I solve and how I work", "u": "/founders.html"},
+        {"t": "Featured products", "d": "Flagship stories", "u": "/#featured"},
+        {"t": "Contact", "d": "Intent-based email", "u": "/contact.html"}
+      ]
+    },
+    "now": {
+      "title": "Current focus",
+      "body": "Public status — no private roadmaps:",
+      "links": [
+        {"t": "Now", "d": "Active work on the bench", "u": "/now.html"},
+        {"t": "Roadmap", "d": "Exploring → Shipped statuses", "u": "/roadmap.html"},
+        {"t": "Status page", "d": "Transparent system health labels", "u": "/status.html"},
+        {"t": "Lab", "d": "Open experiments", "u": "/lab.html"}
+      ]
+    },
+    "ocr": {
+      "title": "OCR document intelligence",
+      "body": "Because you asked about OCR — portfolio-only paths:",
+      "links": [
+        {"t": "OCR product", "d": "What it is for users", "u": "/products/ocr-engine.html"},
+        {"t": "Interactive architecture", "d": "Stage-by-stage pipeline", "u": "/architecture.html#ocr"},
+        {"t": "Research note", "d": "Why extraction ≠ understanding", "u": "/research/ai-document-intelligence-legal.html"},
+        {"t": "Human + AI pattern", "d": "Review as the product", "u": "/patterns.html#human-ai-review"}
+      ]
+    }
+  },
+  "fallback": {
+    "title": "Stay inside the portfolio",
+    "body": "I only answer from published pages here — no external claims. Try a suggested question, or browse:",
+    "links": [
+      {"t": "Start here", "d": "Guided journeys", "u": "/start.html"},
+      {"t": "Featured insights", "d": "Curated thinking", "u": "/#insights"},
+      {"t": "Featured insights", "d": "Curated thinking", "u": "/#insights"},
+      {"t": "Contact", "d": "Ask me directly", "u": "/contact.html"}
+    ]
+  }
+}

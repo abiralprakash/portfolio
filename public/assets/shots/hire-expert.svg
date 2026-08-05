@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" fill="none">
+  <rect width="1440" height="900" fill="#0A3A5C"/>
+  <circle cx="1080" cy="220" r="280" fill="#0E4A73" opacity=".55"/>
+  <circle cx="320" cy="680" r="220" fill="#083048" opacity=".9"/>
+  <path d="M180 620 C420 420 620 700 900 480 C1080 340 1220 420 1320 300" stroke="#E2E7ED" stroke-width="2" opacity=".35"/>
+  <path d="M220 700 C480 520 700 760 960 560" stroke="#C45C26" stroke-width="2" opacity=".55"/>
+  <g fill="#F0F3F6">
+    <circle cx="420" cy="460" r="6"/>
+    <circle cx="700" cy="540" r="5"/>
+    <circle cx="980" cy="400" r="7"/>
+    <circle cx="1180" cy="360" r="5"/>
+  </g>
+  <text x="120" y="220" fill="#F0F3F6" font-family="Georgia, serif" font-style="italic" font-size="72">Hire an Expert</text>
+  <text x="120" y="290" fill="#C45C26" font-family="Georgia, serif" font-style="italic" font-size="36">Nepal</text>
+  <text x="120" y="780" fill="#C2CAD4" font-family="system-ui, sans-serif" font-size="22">Marketplace architecture for verified expertise</text>
+</svg>

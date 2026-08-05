@@ -1,0 +1,36 @@
+{
+  "ocr": [
+    {"t": "AI OCR Document Intelligence", "u": "/products/ocr-engine.html", "d": "Product"},
+    {"t": "OCR architecture pipeline", "u": "/architecture.html#ocr", "d": "Architecture"},
+    {"t": "Document intelligence research", "u": "/research/ai-document-intelligence-legal.html", "d": "Research"},
+    {"t": "Designing OCR pipelines", "u": "/engineering/designing-ocr-pipelines.html", "d": "Engineering"},
+    {"t": "Document Intelligence Pattern", "u": "/patterns.html#document-intelligence", "d": "Pattern"},
+    {"t": "Related decisions", "u": "/decisions.html", "d": "Decisions"}
+  ],
+  "search": [
+    {"t": "Building 130k search", "u": "/engineering/building-130k-search.html", "d": "Engineering"},
+    {"t": "Register search research", "u": "/research/register-search-accuracy.html", "d": "Research"},
+    {"t": "Search playground", "u": "/playground.html#search", "d": "Playground"},
+    {"t": "Exact matching decision", "u": "/decisions.html", "d": "Decisions"},
+    {"t": "NepalIPMS", "u": "/products/nepal-ipms.html", "d": "Product"}
+  ],
+  "cloudflare": [
+    {"t": "Cloudflare production", "u": "/engineering/cloudflare-production.html", "d": "Engineering"},
+    {"t": "Stack", "u": "/stack.html", "d": "Stack"},
+    {"t": "Why D1 decision", "u": "/decisions.html", "d": "Decisions"},
+    {"t": "NepalIPMS", "u": "/products/nepal-ipms.html", "d": "Product"}
+  ],
+  "ai": [
+    {"t": "AI product patterns", "u": "/patterns.html", "d": "Patterns"},
+    {"t": "Human + AI review", "u": "/patterns.html#human-ai-review", "d": "Pattern"},
+    {"t": "The Lab", "u": "/lab.html", "d": "Lab"},
+    {"t": "AI features engineering", "u": "/engineering/ai-features-users-need.html", "d": "Engineering"},
+    {"t": "Thinking", "u": "/thinking/", "d": "Thinking"}
+  ],
+  "ux": [
+    {"t": "Capabilities (UX)", "u": "/capabilities.html", "d": "Capabilities"},
+    {"t": "Design system", "u": "/design-system.html", "d": "Design"},
+    {"t": "Thinking — UX is system design", "u": "/thinking/#ux-system", "d": "Thinking"},
+    {"t": "Software for legal workflows", "u": "/engineering/software-for-legal-workflows.html", "d": "Engineering"}
+  ]
+}

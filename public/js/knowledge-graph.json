@@ -1,0 +1,1054 @@
+{
+  "/products/nepal-ipms.html": {
+    "title": "Recommendation path",
+    "lead": "Travel from product into decisions, patterns, research, and founder context.",
+    "links": [
+      {
+        "kind": "Related Engineering",
+        "label": "Production scale",
+        "sub": "Building NepalIPMS",
+        "href": "/engineering/building-nepalipms-production.html"
+      },
+      {
+        "kind": "Related Decision",
+        "label": "Exact matching / D1",
+        "sub": "Tradeoffs that shipped",
+        "href": "/decisions.html"
+      },
+      {
+        "kind": "Related Pattern",
+        "label": "Workflow automation",
+        "sub": "Desk-shaped triggers",
+        "href": "/patterns.html#workflow-automation"
+      },
+      {
+        "kind": "Related Research",
+        "label": "Legal document AI",
+        "sub": "Why the layer exists",
+        "href": "/research/ai-document-intelligence-legal.html"
+      },
+      {
+        "kind": "Related Skill",
+        "label": "Edge data systems",
+        "sub": "Workers, D1, R2",
+        "href": "/stack.html"
+      },
+      {
+        "kind": "Workflow",
+        "label": "Before → after",
+        "sub": "Screen evidence",
+        "href": "/workflows/#nepalipms"
+      }
+    ]
+  },
+  "/products/ocr-engine.html": {
+    "title": "Continue exploring OCR",
+    "links": [
+      {
+        "label": "Interactive pipeline",
+        "sub": "Click each OCR stage",
+        "href": "/architecture.html#ocr"
+      },
+      {
+        "label": "Decision",
+        "sub": "Why this OCR pipeline architecture",
+        "href": "/decisions.html"
+      },
+      {
+        "label": "Engineering",
+        "sub": "Designing OCR pipelines",
+        "href": "/engineering/designing-ocr-pipelines.html"
+      },
+      {
+        "label": "Parent product",
+        "sub": "NepalIPMS",
+        "href": "/products/nepal-ipms.html"
+      },
+      {
+        "label": "Case study",
+        "sub": "How it was built",
+        "href": "/case/ai-ocr-engine.html"
+      },
+      {
+        "label": "Lab",
+        "sub": "Document intelligence experiments",
+        "href": "/lab.html"
+      }
+    ]
+  },
+  "/products/scholarquest.html": {
+    "title": "Continue exploring ScholarQuest",
+    "links": [
+      {
+        "label": "Case study",
+        "sub": "How it was built",
+        "href": "/case/scholarquest.html"
+      },
+      {
+        "label": "Capability",
+        "sub": "Product platforms & UX",
+        "href": "/capabilities.html"
+      },
+      {
+        "label": "Thinking",
+        "sub": "What makes products useful",
+        "href": "/thinking/"
+      },
+      {
+        "label": "Gallery",
+        "sub": "Product screenshots",
+        "href": "/gallery.html#scholarquest"
+      }
+    ]
+  },
+  "/case/nepal-ipms.html": {
+    "title": "Continue exploring",
+    "links": [
+      {
+        "label": "Product page",
+        "sub": "What it is for users",
+        "href": "/products/nepal-ipms.html"
+      },
+      {
+        "label": "OCR pipeline",
+        "sub": "How document intelligence works",
+        "href": "/architecture.html#ocr"
+      },
+      {
+        "label": "Decision",
+        "sub": "Why the architecture was chosen",
+        "href": "/decisions.html"
+      },
+      {
+        "label": "Engineering",
+        "sub": "Production scale notes",
+        "href": "/engineering/building-nepalipms-production.html"
+      }
+    ]
+  },
+  "/case/ai-ocr-engine.html": {
+    "title": "Continue exploring",
+    "links": [
+      {
+        "label": "Product page",
+        "sub": "What the OCR engine is",
+        "href": "/products/ocr-engine.html"
+      },
+      {
+        "label": "Interactive architecture",
+        "sub": "Stage-by-stage pipeline",
+        "href": "/architecture.html#ocr"
+      },
+      {
+        "label": "Engineering",
+        "sub": "Designing OCR pipelines",
+        "href": "/engineering/designing-ocr-pipelines.html"
+      },
+      {
+        "label": "NepalIPMS",
+        "sub": "Where it ships",
+        "href": "/products/nepal-ipms.html"
+      }
+    ]
+  },
+  "/case/global-law.html": {
+    "title": "Continue exploring",
+    "links": [
+      {
+        "label": "NepalIPMS",
+        "sub": "Firm also runs IP ops here",
+        "href": "/products/nepal-ipms.html"
+      },
+      {
+        "label": "Thinking",
+        "sub": "Useful products vs brochures",
+        "href": "/thinking/"
+      },
+      {
+        "label": "Capabilities",
+        "sub": "Platforms & publishing",
+        "href": "/capabilities.html"
+      }
+    ]
+  },
+  "/engineering/building-nepalipms-production.html": {
+    "title": "Recommendation path",
+    "lead": "From one engineering note into the full ecosystem.",
+    "links": [
+      {
+        "kind": "Related Product",
+        "label": "NepalIPMS",
+        "sub": "Production LegalTech SaaS",
+        "href": "/products/nepal-ipms.html"
+      },
+      {
+        "kind": "Related Decision",
+        "label": "Exact matching vs fuzzy",
+        "sub": "Register search tradeoff",
+        "href": "/decisions.html"
+      },
+      {
+        "kind": "Related Pattern",
+        "label": "Workflow automation",
+        "sub": "Trigger → decision → action → feedback",
+        "href": "/patterns.html#workflow-automation"
+      },
+      {
+        "kind": "Related Research",
+        "label": "AI in legal workflows",
+        "sub": "Why document intelligence should exist",
+        "href": "/research/ai-document-intelligence-legal.html"
+      },
+      {
+        "kind": "Related Skill",
+        "label": "Data systems",
+        "sub": "Migrations, FTS, edge persistence",
+        "href": "/stack.html"
+      },
+      {
+        "kind": "Founder note",
+        "label": "Why I built NepalIPMS",
+        "sub": "Personal context",
+        "href": "/founder-notes/why-i-built-nepalipms.html"
+      }
+    ]
+  },
+  "/engineering/designing-ocr-pipelines.html": {
+    "title": "Recommendation path",
+    "links": [
+      {
+        "kind": "Related Product",
+        "label": "OCR Engine",
+        "sub": "Shipped intake",
+        "href": "/products/ocr-engine.html"
+      },
+      {
+        "kind": "Related Pattern",
+        "label": "Document Intelligence",
+        "sub": "Input → action",
+        "href": "/patterns.html#document-intelligence"
+      },
+      {
+        "kind": "Related Research",
+        "label": "Legal document AI",
+        "sub": "Extraction ≠ understanding",
+        "href": "/research/ai-document-intelligence-legal.html"
+      },
+      {
+        "kind": "Related Decision",
+        "label": "Pipeline architecture",
+        "sub": "Tradeoffs",
+        "href": "/decisions.html"
+      },
+      {
+        "kind": "Related Skill",
+        "label": "Human + AI review",
+        "sub": "Review UX",
+        "href": "/patterns.html#human-ai-review"
+      }
+    ]
+  },
+  "/engineering/cloudflare-production.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "Stack",
+        "sub": "Workers, D1, R2, KV",
+        "href": "/stack.html"
+      },
+      {
+        "label": "Decision",
+        "sub": "Why Cloudflare D1",
+        "href": "/decisions.html"
+      },
+      {
+        "label": "NepalIPMS",
+        "sub": "Product that runs on it",
+        "href": "/products/nepal-ipms.html"
+      },
+      {
+        "label": "Diagrams",
+        "sub": "Edge topology",
+        "href": "/diagrams.html"
+      }
+    ]
+  },
+  "/engineering/building-130k-search.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "Decision",
+        "sub": "Exact matching over fuzzy",
+        "href": "/decisions.html"
+      },
+      {
+        "label": "NepalIPMS",
+        "sub": "Where search lives",
+        "href": "/products/nepal-ipms.html"
+      },
+      {
+        "label": "Diagram",
+        "sub": "Search architecture",
+        "href": "/diagrams.html"
+      },
+      {
+        "label": "Playground",
+        "sub": "Search demo",
+        "href": "/playground.html#search"
+      }
+    ]
+  },
+  "/engineering/ai-features-users-need.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "OCR product",
+        "sub": "Production AI feature",
+        "href": "/products/ocr-engine.html"
+      },
+      {
+        "label": "Lab",
+        "sub": "Agent experiments",
+        "href": "/lab.html"
+      },
+      {
+        "label": "Thinking",
+        "sub": "AI changes workflows",
+        "href": "/thinking/"
+      },
+      {
+        "label": "Roadmap",
+        "sub": "Where this goes next",
+        "href": "/roadmap.html"
+      }
+    ]
+  },
+  "/engineering/software-for-legal-workflows.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "NepalIPMS",
+        "sub": "Desk-shaped product",
+        "href": "/products/nepal-ipms.html"
+      },
+      {
+        "label": "Capabilities",
+        "sub": "UX & legal workflows",
+        "href": "/capabilities.html"
+      },
+      {
+        "label": "Thinking",
+        "sub": "UX is part of the system",
+        "href": "/thinking/"
+      },
+      {
+        "label": "Case study",
+        "sub": "Full build story",
+        "href": "/case/nepal-ipms.html"
+      }
+    ]
+  },
+  "/engineering/database-optimization.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "NepalIPMS",
+        "sub": "150+ migrations in production",
+        "href": "/products/nepal-ipms.html"
+      },
+      {
+        "label": "Search notes",
+        "sub": "FTS at register scale",
+        "href": "/engineering/building-130k-search.html"
+      },
+      {
+        "label": "Stack",
+        "sub": "D1 / SQLite",
+        "href": "/stack.html"
+      },
+      {
+        "label": "Decisions",
+        "sub": "Why D1",
+        "href": "/decisions.html"
+      }
+    ]
+  },
+  "/decisions.html": {
+    "title": "Related systems",
+    "links": [
+      {
+        "label": "NepalIPMS",
+        "sub": "Where decisions shipped",
+        "href": "/products/nepal-ipms.html"
+      },
+      {
+        "label": "Engineering",
+        "sub": "Production notes",
+        "href": "/engineering/"
+      },
+      {
+        "label": "Stack",
+        "sub": "Tools behind the choices",
+        "href": "/stack.html"
+      },
+      {
+        "label": "Architecture",
+        "sub": "Visual systems",
+        "href": "/architecture.html"
+      }
+    ]
+  },
+  "/thinking": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "Philosophy",
+        "sub": "Longer product philosophy",
+        "href": "/philosophy.html"
+      },
+      {
+        "label": "Capabilities",
+        "sub": "UX & AI map",
+        "href": "/capabilities.html"
+      },
+      {
+        "label": "Lab",
+        "sub": "Experiments in progress",
+        "href": "/lab.html"
+      },
+      {
+        "label": "Start here",
+        "sub": "Guided paths",
+        "href": "/start.html"
+      }
+    ]
+  },
+  "/thinking.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "Philosophy",
+        "sub": "Longer product philosophy",
+        "href": "/philosophy.html"
+      },
+      {
+        "label": "Capabilities",
+        "sub": "UX & AI map",
+        "href": "/capabilities.html"
+      },
+      {
+        "label": "Lab",
+        "sub": "Experiments in progress",
+        "href": "/lab.html"
+      },
+      {
+        "label": "Start here",
+        "sub": "Guided paths",
+        "href": "/start.html"
+      }
+    ]
+  },
+  "/start.html": {
+    "title": "Continue exploring",
+    "links": [
+      {
+        "label": "Products",
+        "sub": "What ships",
+        "href": "/products/"
+      },
+      {
+        "label": "Roadmap",
+        "sub": "Direction",
+        "href": "/roadmap.html"
+      },
+      {
+        "label": "Journal",
+        "sub": "What changed",
+        "href": "/journal/"
+      },
+      {
+        "label": "Contact",
+        "sub": "Say hello",
+        "href": "/#contact"
+      }
+    ]
+  },
+  "/roadmap.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "Now",
+        "sub": "Current focus",
+        "href": "/now.html"
+      },
+      {
+        "label": "Lab",
+        "sub": "Open experiments",
+        "href": "/lab.html"
+      },
+      {
+        "label": "Journal",
+        "sub": "Recent lessons",
+        "href": "/journal/"
+      },
+      {
+        "label": "Activity",
+        "sub": "Public presence",
+        "href": "/activity.html"
+      }
+    ]
+  },
+  "/journal": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "Changelog",
+        "sub": "Release list",
+        "href": "/changelog.html"
+      },
+      {
+        "label": "Roadmap",
+        "sub": "Where attention points",
+        "href": "/roadmap.html"
+      },
+      {
+        "label": "Diagrams",
+        "sub": "Visual systems",
+        "href": "/diagrams.html"
+      },
+      {
+        "label": "Playground",
+        "sub": "Working demos",
+        "href": "/playground.html"
+      }
+    ]
+  },
+  "/diagrams.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "Architecture",
+        "sub": "Interactive OCR & topology",
+        "href": "/architecture.html"
+      },
+      {
+        "label": "Systems",
+        "sub": "Data → AI → product",
+        "href": "/systems.html"
+      },
+      {
+        "label": "Decisions",
+        "sub": "Tradeoffs behind diagrams",
+        "href": "/decisions.html"
+      },
+      {
+        "label": "Engineering",
+        "sub": "Written depth",
+        "href": "/engineering/"
+      }
+    ]
+  },
+  "/playground.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "Open source",
+        "sub": "More craft demos",
+        "href": "/open-source.html"
+      },
+      {
+        "label": "Lab",
+        "sub": "Exploration themes",
+        "href": "/lab.html"
+      },
+      {
+        "label": "OCR product",
+        "sub": "Production pipeline",
+        "href": "/products/ocr-engine.html"
+      },
+      {
+        "label": "Search engineering",
+        "sub": "130K register notes",
+        "href": "/engineering/building-130k-search.html"
+      }
+    ]
+  },
+  "/activity.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "Changelog",
+        "sub": "What shipped",
+        "href": "/changelog.html"
+      },
+      {
+        "label": "Journal",
+        "sub": "Lessons attached",
+        "href": "/journal/"
+      },
+      {
+        "label": "Writing",
+        "sub": "Engineering notes",
+        "href": "/engineering/"
+      },
+      {
+        "label": "Profile",
+        "sub": "Timeline & skills",
+        "href": "/profile.html"
+      }
+    ]
+  },
+  "/architecture.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "Diagrams index",
+        "sub": "All visual systems",
+        "href": "/diagrams.html"
+      },
+      {
+        "label": "OCR product",
+        "sub": "Pipeline in product form",
+        "href": "/products/ocr-engine.html"
+      },
+      {
+        "label": "NepalIPMS",
+        "sub": "Host SaaS",
+        "href": "/products/nepal-ipms.html"
+      },
+      {
+        "label": "Journal",
+        "sub": "Interactive OCR viewer note",
+        "href": "/journal/"
+      }
+    ]
+  },
+  "/lab.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "Roadmap",
+        "sub": "Direction of exploration",
+        "href": "/roadmap.html"
+      },
+      {
+        "label": "Now",
+        "sub": "Current focus",
+        "href": "/now.html"
+      },
+      {
+        "label": "Playground",
+        "sub": "Working demos",
+        "href": "/playground.html"
+      },
+      {
+        "label": "Capabilities",
+        "sub": "Where experiments land",
+        "href": "/capabilities.html"
+      }
+    ]
+  },
+  "/research": {
+    "title": "Continue exploring",
+    "links": [
+      {
+        "label": "Patterns",
+        "sub": "Reusable AI product shapes",
+        "href": "/patterns.html"
+      },
+      {
+        "label": "OCR product",
+        "sub": "Where research shipped",
+        "href": "/products/ocr-engine.html"
+      },
+      {
+        "label": "Lab",
+        "sub": "Open experiments",
+        "href": "/lab.html"
+      },
+      {
+        "label": "Engineering",
+        "sub": "How it was built",
+        "href": "/engineering/"
+      }
+    ]
+  },
+  "/research/ai-document-intelligence-legal.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "OCR Engine",
+        "sub": "Shipped product",
+        "href": "/products/ocr-engine.html"
+      },
+      {
+        "label": "Pattern",
+        "sub": "Document Intelligence",
+        "href": "/patterns.html#document-intelligence"
+      },
+      {
+        "label": "Engineering",
+        "sub": "Designing OCR pipelines",
+        "href": "/engineering/designing-ocr-pipelines.html"
+      },
+      {
+        "label": "Playground",
+        "sub": "Interactive pipeline",
+        "href": "/playground.html#ocr"
+      }
+    ]
+  },
+  "/research/register-search-accuracy.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "NepalIPMS",
+        "sub": "Where search lives",
+        "href": "/products/nepal-ipms.html"
+      },
+      {
+        "label": "Engineering",
+        "sub": "130K search notes",
+        "href": "/engineering/building-130k-search.html"
+      },
+      {
+        "label": "Decision",
+        "sub": "Exact over fuzzy",
+        "href": "/decisions.html"
+      },
+      {
+        "label": "Playground",
+        "sub": "Search demo",
+        "href": "/playground.html#search"
+      }
+    ]
+  },
+  "/patterns.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "Research",
+        "sub": "Why patterns exist",
+        "href": "/research/"
+      },
+      {
+        "label": "OCR Engine",
+        "sub": "Document intelligence",
+        "href": "/products/ocr-engine.html"
+      },
+      {
+        "label": "NepalIPMS",
+        "sub": "Workflow host",
+        "href": "/products/nepal-ipms.html"
+      },
+      {
+        "label": "Playground",
+        "sub": "Try the patterns",
+        "href": "/playground.html"
+      }
+    ]
+  },
+  "/teardowns": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "Patterns",
+        "sub": "What we reuse",
+        "href": "/patterns.html"
+      },
+      {
+        "label": "Design system",
+        "sub": "Our approach",
+        "href": "/design-system.html"
+      },
+      {
+        "label": "Thinking",
+        "sub": "Point of view",
+        "href": "/thinking/"
+      },
+      {
+        "label": "Founders",
+        "sub": "How I help",
+        "href": "/founders.html"
+      }
+    ]
+  },
+  "/design-system.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "Thinking",
+        "sub": "UX is system design",
+        "href": "/thinking/"
+      },
+      {
+        "label": "Capabilities",
+        "sub": "UX as a branch",
+        "href": "/capabilities.html"
+      },
+      {
+        "label": "Patterns",
+        "sub": "Product shapes",
+        "href": "/patterns.html"
+      },
+      {
+        "label": "Philosophy",
+        "sub": "Longer view",
+        "href": "/philosophy.html"
+      }
+    ]
+  },
+  "/founders.html": {
+    "title": "Continue exploring",
+    "links": [
+      {
+        "label": "Products",
+        "sub": "Proof of method",
+        "href": "/products/"
+      },
+      {
+        "label": "Start here",
+        "sub": "Guided path",
+        "href": "/start.html"
+      },
+      {
+        "label": "Patterns",
+        "sub": "How systems repeat",
+        "href": "/patterns.html"
+      },
+      {
+        "label": "Contact",
+        "sub": "Say hello",
+        "href": "/#contact"
+      }
+    ]
+  },
+  "/contributions.html": {
+    "title": "Related",
+    "links": [
+      {
+        "label": "Open source",
+        "sub": "Craft demos",
+        "href": "/open-source.html"
+      },
+      {
+        "label": "Activity",
+        "sub": "Public presence",
+        "href": "/activity.html"
+      },
+      {
+        "label": "Engineering",
+        "sub": "Articles",
+        "href": "/engineering/"
+      },
+      {
+        "label": "Subscribe",
+        "sub": "Notes distribution",
+        "href": "/subscribe.html"
+      }
+    ]
+  },
+  "/founder-notes": {
+    "title": "Continue exploring",
+    "links": [
+      {
+        "kind": "Principles",
+        "label": "Operating system",
+        "sub": "How I work",
+        "href": "/principles.html"
+      },
+      {
+        "kind": "Founders",
+        "label": "Founder brief",
+        "sub": "How I can help",
+        "href": "/founders.html"
+      },
+      {
+        "kind": "Proof",
+        "label": "Proof of work",
+        "sub": "Evidence compact",
+        "href": "/proof.html"
+      },
+      {
+        "kind": "Insights",
+        "label": "Featured insights",
+        "sub": "Homepage curation",
+        "href": "/#insights"
+      }
+    ]
+  },
+  "/founder-notes/why-i-built-nepalipms.html": {
+    "title": "Recommendation path",
+    "links": [
+      {
+        "kind": "Related Product",
+        "label": "NepalIPMS",
+        "sub": "What shipped",
+        "href": "/products/nepal-ipms.html"
+      },
+      {
+        "kind": "Related Engineering",
+        "label": "Production scale",
+        "sub": "How it was built",
+        "href": "/engineering/building-nepalipms-production.html"
+      },
+      {
+        "kind": "Related Workflow",
+        "label": "Desk walkthrough",
+        "sub": "Before → after",
+        "href": "/workflows/#nepalipms"
+      },
+      {
+        "kind": "Related Proof",
+        "label": "Evidence row",
+        "sub": "Compact proof",
+        "href": "/proof.html"
+      }
+    ]
+  },
+  "/proof.html": {
+    "title": "Related",
+    "links": [
+      {
+        "kind": "Workflows",
+        "label": "Workflow evidence",
+        "sub": "Screen walkthroughs",
+        "href": "/workflows/"
+      },
+      {
+        "kind": "Report",
+        "label": "2026 builder report",
+        "sub": "Yearly archive",
+        "href": "/reports/2026.html"
+      },
+      {
+        "kind": "Contact",
+        "label": "Start a conversation",
+        "sub": "Intent-based contact",
+        "href": "/contact.html"
+      },
+      {
+        "kind": "Insights",
+        "label": "Featured insights",
+        "sub": "Strongest thinking",
+        "href": "/#insights"
+      }
+    ]
+  },
+  "/principles.html": {
+    "title": "Related",
+    "links": [
+      {
+        "kind": "Design",
+        "label": "Design system",
+        "sub": "Visual principles",
+        "href": "/design-system.html"
+      },
+      {
+        "kind": "Thinking",
+        "label": "Essays",
+        "sub": "Point of view",
+        "href": "/thinking/"
+      },
+      {
+        "kind": "Founder notes",
+        "label": "Build lessons",
+        "sub": "Practical stories",
+        "href": "/founder-notes/"
+      },
+      {
+        "kind": "Patterns",
+        "label": "AI patterns",
+        "sub": "Reusable shapes",
+        "href": "/patterns.html"
+      }
+    ]
+  },
+  "/contact.html": {
+    "title": "Before you write",
+    "links": [
+      {
+        "kind": "Brief",
+        "label": "For founders",
+        "sub": "Problems I solve",
+        "href": "/founders.html"
+      },
+      {
+        "kind": "Proof",
+        "label": "Proof of work",
+        "sub": "Evidence",
+        "href": "/proof.html"
+      },
+      {
+        "kind": "Start",
+        "label": "Guided paths",
+        "sub": "Pick a route",
+        "href": "/start.html"
+      },
+      {
+        "kind": "Principles",
+        "label": "How I work",
+        "sub": "Operating system",
+        "href": "/principles.html"
+      }
+    ]
+  },
+  "/workflows": {
+    "title": "Related",
+    "links": [
+      {
+        "kind": "Product",
+        "label": "NepalIPMS",
+        "sub": "Practice SaaS",
+        "href": "/products/nepal-ipms.html"
+      },
+      {
+        "kind": "Product",
+        "label": "OCR Engine",
+        "sub": "Document intelligence",
+        "href": "/products/ocr-engine.html"
+      },
+      {
+        "kind": "Proof",
+        "label": "Proof of work",
+        "sub": "Compact evidence",
+        "href": "/proof.html"
+      },
+      {
+        "kind": "Demos",
+        "label": "Demo walkthroughs",
+        "sub": "30-second paths",
+        "href": "/demos.html"
+      }
+    ]
+  },
+  "/reports/2026.html": {
+    "title": "Related",
+    "links": [
+      {
+        "kind": "Journal",
+        "label": "Product journal",
+        "sub": "Lessons attached",
+        "href": "/journal/"
+      },
+      {
+        "kind": "Roadmap",
+        "label": "Public roadmap",
+        "sub": "Status without dates",
+        "href": "/roadmap.html"
+      },
+      {
+        "kind": "Changelog",
+        "label": "Changelog",
+        "sub": "What shipped",
+        "href": "/changelog.html"
+      },
+      {
+        "kind": "Activity",
+        "label": "Reputation signals",
+        "sub": "Linkable presence",
+        "href": "/activity.html"
+      }
+    ]
+  }
+}

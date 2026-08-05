@@ -1,0 +1,16 @@
+{
+  "name": "prakash-portfolio",
+  "compatibility_date": "2026-08-05",
+  "main": "src/index.js",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page"
+  },
+  "analytics_engine_datasets": [
+    {
+      "binding": "ANALYTICS",
+      "dataset": "portfolio_events"
+    }
+  ]
+}

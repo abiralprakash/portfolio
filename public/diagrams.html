@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diagrams — Prakash Adhikari</title>
+<meta name="description" content="Technical diagrams index — OCR pipeline, search architecture, document lifecycle, SaaS topology, data import, AI workflows.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Diagrams — Prakash Adhikari">
+<meta property="og:description" content="Visual index of systems — each diagram links to product, engineering, and decisions.">
+<meta property="og:image" content="https://prakash-portfolio.prakash-adhikari65.workers.dev/assets/shots/proof/nepal-ipms-hero.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://prakash-portfolio.prakash-adhikari65.workers.dev/diagrams.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">Prakash Adhikari</a>
+    <nav class="nav-links" aria-label="Primary"></nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" type="button">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <a href="/#contact" class="btn btn-solid">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow reveal">Diagrams</p>
+    <h1 class="reveal">Visual index of systems.</h1>
+    <p class="lede reveal">Each diagram is a door into the knowledge graph — product, engineering note, and decision behind the picture.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <nav class="diagram-index" aria-label="Diagram library">
+      <a class="reveal" href="/architecture.html#ocr">
+        <strong>OCR pipeline</strong>
+        <span>Interactive stages — upload → layout OCR → extract → review → matter.</span>
+        <span class="meta" style="margin-top:.75rem">Product: OCR Engine · Engineering: Designing OCR pipelines · Decision: pipeline architecture</span>
+      </a>
+      <a class="reveal" href="/engineering/building-130k-search.html">
+        <strong>Search architecture</strong>
+        <span>FTS at register scale — normalization, indexes, latency for live desks.</span>
+        <span class="meta" style="margin-top:.75rem">Product: NepalIPMS · Engineering: 130K search · Decision: exact over fuzzy</span>
+      </a>
+      <a class="reveal" href="/systems.html">
+        <strong>Document lifecycle</strong>
+        <span>From bulletin PDF to structured field with provenance and human confirmation.</span>
+        <span class="meta" style="margin-top:.75rem">Product: OCR · Systems · Architecture gallery</span>
+      </a>
+      <a class="reveal" href="/architecture.html">
+        <strong>SaaS architecture</strong>
+        <span>Edge-native LegalTech — Workers, D1, R2, app topology.</span>
+        <span class="meta" style="margin-top:.75rem">Product: NepalIPMS · Engineering: Cloudflare production · Decision: D1</span>
+      </a>
+      <a class="reveal" href="/engineering/building-nepalipms-production.html">
+        <strong>Data import pipeline</strong>
+        <span>Register and matter data into production without freezing the desk.</span>
+        <span class="meta" style="margin-top:.75rem">Product: NepalIPMS · Engineering: production scale · Journal</span>
+      </a>
+      <a class="reveal" href="/lab.html">
+        <strong>AI workflow</strong>
+        <span>Retrieval → draft → cite → human review — agents that do not silently write files.</span>
+        <span class="meta" style="margin-top:.75rem">Lab · Roadmap · Engineering: AI features users need</span>
+      </a>
+    </nav>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>© 2026 Prakash Adhikari</span>
+    <span>Kathmandu, Nepal</span>
+  </div>
+</footer>
+<script src="/js/nav.js" defer></script>
+<script src="/js/site.js" defer></script>
+</body>
+</html>

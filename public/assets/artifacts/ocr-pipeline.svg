@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" fill="none" role="img" aria-labelledby="t d">
+  <title id="t">OCR document intelligence pipeline</title>
+  <desc id="d">Upload through human review to matter merge</desc>
+  <rect width="720" height="400" fill="#E2E7ED"/>
+  <text x="40" y="44" fill="#6B7684" font-family="Georgia, serif" font-style="italic" font-size="18">Document intelligence  staged, not magical</text>
+  <g font-family="system-ui,sans-serif" font-size="13" fill="#0B1520">
+    <rect x="36" y="80" width="100" height="48" stroke="#0A3A5C" fill="#EEF1F4"/>
+    <text x="86" y="109" text-anchor="middle">Upload</text>
+    <path d="M136 104 H168" stroke="#0A3A5C"/><path d="M160 98 L168 104 L160 110" stroke="#0A3A5C"/>
+    <rect x="168" y="80" width="88" height="48" stroke="#0A3A5C" fill="#EEF1F4"/>
+    <text x="212" y="109" text-anchor="middle">OCR</text>
+    <path d="M256 104 H288" stroke="#0A3A5C"/><path d="M280 98 L288 104 L280 110" stroke="#0A3A5C"/>
+    <rect x="288" y="80" width="100" height="48" stroke="#0A3A5C" fill="#EEF1F4"/>
+    <text x="338" y="109" text-anchor="middle">Classify</text>
+    <path d="M388 104 H420" stroke="#0A3A5C"/><path d="M412 98 L420 104 L412 110" stroke="#0A3A5C"/>
+    <rect x="420" y="80" width="100" height="48" stroke="#0A3A5C" fill="#EEF1F4"/>
+    <text x="470" y="109" text-anchor="middle">Extract</text>
+    <path d="M520 104 H552" stroke="#0A3A5C"/><path d="M544 98 L552 104 L544 110" stroke="#0A3A5C"/>
+    <rect x="552" y="80" width="132" height="48" stroke="#C45C26" fill="#EEF1F4"/>
+    <text x="618" y="109" text-anchor="middle" fill="#C45C26" font-weight="600">Human review</text>
+  </g>
+  <path d="M618 128 V180" stroke="#0A3A5C"/><path d="M612 172 L618 180 L624 172" stroke="#0A3A5C"/>
+  <rect x="500" y="188" width="184" height="48" stroke="#0A3A5C" fill="#EEF1F4"/>
+  <text x="592" y="217" text-anchor="middle" fill="#0B1520" font-family="system-ui,sans-serif" font-size="13">Merge ’ Matter</text>
+  <text x="40" y="240" fill="#3A4654" font-family="Georgia, serif" font-style="italic" font-size="16">Confidence beside every field. No silent writes.</text>
+  <rect x="40" y="270" width="280" height="88" stroke="#0A3A5C" stroke-dasharray="4 3" fill="transparent"/>
+  <text x="56" y="298" fill="#0A3A5C" font-family="system-ui,sans-serif" font-size="11" letter-spacing="1">SAMPLE FIELDS</text>
+  <text x="56" y="322" fill="#0B1520" font-family="ui-monospace,monospace" font-size="12">Mark && HIMALAYAN TEA</text>
+  <text x="56" y="342" fill="#0B1520" font-family="ui-monospace,monospace" font-size="12">Class & 30 · review </text>
+  <text x="40" y="386" fill="#8A94A1" font-family="system-ui,sans-serif" font-size="11">Artifact · pipeline before pixels</text>
+</svg>

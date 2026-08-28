@@ -9,6 +9,8 @@ import { Scene, SceneItem, MaskReveal, SceneLine, SOFT_SPRING } from './motion.j
 import { Spotlight } from './aceternity/spotlight.jsx';
 import { BackgroundBeams } from './aceternity/background-beams.jsx';
 import { HoverBorderGradient } from './aceternity/hover-border-gradient.jsx';
+import { FlipWords } from './aceternity/flip-words.jsx';
+import { Separator } from './ui/separator.jsx';
 
 export default function Hero() {
   const constraintsRef = useRef(null);
@@ -69,12 +71,8 @@ export default function Hero() {
           </SceneItem>
 
           <SceneItem className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2">
-            {IDENTITY.disciplines.map((d, i) => (
-              <span key={d} className="flex items-center gap-2">
-                {i > 0 && <span className="h-px w-2 bg-white/15" />}
-                <span className="meta text-gray-500">{d}</span>
-              </span>
-            ))}
+            <span className="meta text-gray-500">Working across</span>
+            <FlipWords words={IDENTITY.disciplines} className="meta" />
           </SceneItem>
 
           <SceneItem className="mt-8 flex flex-wrap items-center gap-5">
@@ -96,7 +94,9 @@ export default function Hero() {
             </Button>
           </SceneItem>
 
-          <SceneItem className="mt-10 grid max-w-xl grid-cols-3 gap-4 border-t border-white/10 pt-6 sm:gap-8">
+          <SceneItem className="mt-10 max-w-xl">
+            <Separator className="mb-6 bg-white/10" />
+            <div className="grid grid-cols-3 gap-4 sm:gap-8">
             {PROOF.slice(0, 3).map(({ value, label }) => (
               <div key={label}>
                 <div className="font-display text-2xl font-semibold tracking-tight text-white sm:text-3xl">
@@ -107,6 +107,7 @@ export default function Hero() {
                 </div>
               </div>
             ))}
+            </div>
           </SceneItem>
         </Scene>
 

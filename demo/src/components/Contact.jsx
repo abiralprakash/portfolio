@@ -54,8 +54,25 @@ export default function Contact() {
               <motion.div
                 whileHover={reduce ? undefined : { scale: 1.03, y: -2 }}
                 whileTap={reduce ? undefined : { scale: 0.97 }}
+                onMouseMove={
+                  reduce
+                    ? undefined
+                    : (event) => {
+                        const rect = event.currentTarget.getBoundingClientRect();
+                        const x = (event.clientX - rect.left - rect.width / 2) * 0.18;
+                        const y = (event.clientY - rect.top - rect.height / 2) * 0.18;
+                        event.currentTarget.style.transform = `translate(${x}px, ${y}px)`;
+                      }
+                }
+                onMouseLeave={
+                  reduce
+                    ? undefined
+                    : (event) => {
+                        event.currentTarget.style.transform = '';
+                      }
+                }
                 transition={{ duration: 0.2, ease: EASE }}
-                className="mt-8 inline-flex"
+                className="mt-8 inline-flex will-change-transform"
               >
                 <Button asChild className="group">
                   <a href={`mailto:${IDENTITY.email}?subject=Have%20a%20system%20in%20mind`}>

@@ -308,6 +308,21 @@
   .animate-overlay-out { animation: overlay-out 0.18s ease-in; }
   .animate-sheet-in { animation: sheet-in 0.28s ease-out; }
   .animate-sheet-out { animation: sheet-out 0.22s ease-in; }
+
+  @keyframes lamp-line {
+    0%, 100% { opacity: 0.45; transform: scaleX(0.86); }
+    50% { opacity: 1; transform: scaleX(1); }
+  }
+  .animate-lamp-line {
+    animation: lamp-line 4.5s ease-in-out infinite;
+  }
+  @keyframes lamp-glow {
+    0%, 100% { opacity: 0.55; }
+    50% { opacity: 1; }
+  }
+  .animate-lamp-glow {
+    animation: lamp-glow 4.5s ease-in-out infinite;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -324,7 +339,9 @@
   .animate-overlay-in,
   .animate-overlay-out,
   .animate-sheet-in,
-  .animate-sheet-out {
+  .animate-sheet-out,
+  .animate-lamp-line,
+  .animate-lamp-glow {
     animation: none !important;
   }
 

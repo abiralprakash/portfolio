@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { CHAPTERS } from '../content/index.js';
 import { scrollToId } from '../scroll.js';
+import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip.jsx';
 
 export default function ChapterRail() {
   const [active, setActive] = useState('identity');
@@ -30,30 +31,33 @@ export default function ChapterRail() {
         const isActive = active === chapter.id;
         const n = chapter.index;
         return (
-          <button
-            key={chapter.id}
-            type="button"
-            title={chapter.label}
-            aria-label={`Go to ${chapter.label}`}
-            aria-current={isActive ? 'true' : undefined}
-            onClick={() => scrollToId(chapter.id)}
-            className={`pointer-events-auto group flex items-center gap-2 rounded-full py-1 pl-1 pr-2 text-left transition-opacity duration-300 ${
-              isActive ? 'opacity-100' : 'opacity-35 hover:opacity-80'
-            }`}
-          >
-            <span
-              className={`block h-1.5 w-1.5 rounded-full transition-colors duration-300 ${
-                isActive ? 'bg-[#00df8f]' : 'bg-white/35 group-hover:bg-white/70'
-              }`}
-            />
-            <span
-              className={`meta transition-colors duration-300 ${
-                isActive ? 'text-[#00df8f]' : 'text-gray-500 group-hover:text-gray-300'
-              }`}
-            >
-              {n}
-            </span>
-          </button>
+          <Tooltip key={chapter.id}>
+            <TooltipTrigger asChild>
+              <button
+                type="button"
+                aria-label={`Go to ${chapter.label}`}
+                aria-current={isActive ? 'true' : undefined}
+                onClick={() => scrollToId(chapter.id)}
+                className={`pointer-events-auto group flex items-center gap-2 rounded-full py-1 pl-1 pr-2 text-left transition-opacity duration-300 ${
+                  isActive ? 'opacity-100' : 'opacity-35 hover:opacity-80'
+                }`}
+              >
+                <span
+                  className={`block h-1.5 w-1.5 rounded-full transition-colors duration-300 ${
+                    isActive ? 'bg-primary' : 'bg-white/35 group-hover:bg-white/70'
+                  }`}
+                />
+                <span
+                  className={`meta transition-colors duration-300 ${
+                    isActive ? 'text-primary' : 'text-gray-500 group-hover:text-gray-300'
+                  }`}
+                >
+                  {n}
+                </span>
+              </button>
+            </TooltipTrigger>
+            <TooltipContent side="right">{chapter.label}</TooltipContent>
+          </Tooltip>
         );
       })}
     </nav>

@@ -4,6 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { SYSTEMS } from '../content/index.js';
 import { SectionHeader, StatusDot, STATE_STYLES, EASE } from './ui.jsx';
 import { Scene, SceneItem } from './motion.jsx';
+import { MovingBorder } from './aceternity/moving-border.jsx';
 
 const STORY_STEPS = [
   { key: 'problem', label: 'Problem' },
@@ -154,7 +155,7 @@ export default function CurrentSystems() {
             </p>
 
             <AnimatePresence mode="wait" initial={false} custom={direction}>
-              <motion.article
+              <motion.div
                 key={active.id}
                 custom={direction}
                 initial={reduce ? { opacity: 1 } : { opacity: 0, x: 12 * direction }}
@@ -165,8 +166,9 @@ export default function CurrentSystems() {
                     ? { duration: 0 }
                     : { duration: 0.32, ease: EASE }
                 }
-                className="overflow-hidden rounded-2xl border border-white/[0.09] bg-[#10151b] shadow-[0_30px_90px_-50px_rgba(0,0,0,0.95)]"
               >
+              <MovingBorder className="shadow-[0_30px_90px_-50px_rgba(0,0,0,0.95)]">
+              <article>
                 <div className="relative aspect-[4/3] w-full overflow-hidden border-b border-white/[0.08] bg-[#090c10] sm:aspect-[16/10]">
                   <motion.img
                     key={active.image}
@@ -249,7 +251,9 @@ export default function CurrentSystems() {
                     </a>
                   </div>
                 </div>
-              </motion.article>
+              </article>
+              </MovingBorder>
+              </motion.div>
             </AnimatePresence>
           </div>
         </div>

@@ -6,9 +6,11 @@ import Process from './components/Process.jsx';
 import Capabilities from './components/Capabilities.jsx';
 import Now from './components/Now.jsx';
 import Contact from './components/Contact.jsx';
+import { TooltipProvider } from './components/ui/tooltip.jsx';
 
 export default function App() {
   return (
+    <TooltipProvider>
     <div className="relative min-h-screen bg-background text-foreground antialiased selection:bg-primary selection:text-primary-foreground">
       <a
         href="#main"
@@ -27,5 +29,6 @@ export default function App() {
       </main>
       <Contact />
     </div>
+    </TooltipProvider>
   );
 }

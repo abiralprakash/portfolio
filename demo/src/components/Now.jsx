@@ -1,11 +1,13 @@
 import { NOW } from '../content/index.js';
 import { SectionHeader, StatusDot } from './ui.jsx';
 import { Scene, SceneItem } from './motion.jsx';
+import { Lamp } from './aceternity/lamp.jsx';
 
 export default function Now() {
   return (
-    <section id="now" className="section-scene relative bg-[#0d1116] py-24 md:py-36">
-      <div className="mx-auto max-w-7xl px-6 md:px-10">
+    <section id="now" className="section-scene relative overflow-hidden bg-background py-24 md:py-36">
+      <Lamp />
+      <div className="relative mx-auto max-w-7xl px-6 md:px-10">
         <div className="mb-14 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <SectionHeader index="05" label="Now" title="What's on the bench." />
           <Scene>

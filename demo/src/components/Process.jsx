@@ -1,7 +1,9 @@
 import { IDENTITY, PROCESS } from '../content/index.js';
 import { SectionHeader, Outline } from './ui.jsx';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion.jsx';
-import { Scene, SceneItem, MaskReveal } from './motion.jsx';
+import { Scene, SceneItem } from './motion.jsx';
+import { TracingBeam } from './aceternity/tracing-beam.jsx';
+import { TextGenerate } from './aceternity/text-generate.jsx';
 
 export default function Process() {
   return (
@@ -18,27 +20,27 @@ export default function Process() {
           }
         />
 
-        <Scene className="mt-10 max-w-3xl">
-          <MaskReveal
-            as="p"
-            contentClassName="font-display text-2xl font-medium leading-[1.3] tracking-[-0.025em] text-white/85 md:text-3xl"
-          >
-            {IDENTITY.philosophy}
-          </MaskReveal>
-        </Scene>
+        <div className="mt-10 max-w-3xl">
+          <TextGenerate
+            text={IDENTITY.philosophy}
+            className="font-display text-2xl font-medium leading-[1.3] tracking-[-0.025em] text-white/85 md:text-3xl"
+          />
+        </div>
 
-        <Scene stagger={0.06} className="mt-16">
-          <SceneItem>
-            <Accordion type="single" collapsible defaultValue="stage-0">
-              {PROCESS.map((stage, index) => (
-                <AccordionItem key={stage.n} value={`stage-${index}`}>
-                  <AccordionTrigger index={stage.n}>{stage.title}</AccordionTrigger>
-                  <AccordionContent>{stage.body}</AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </SceneItem>
-        </Scene>
+        <TracingBeam className="mt-16 md:pl-6 lg:pl-4">
+          <Scene stagger={0.06}>
+            <SceneItem>
+              <Accordion type="single" collapsible defaultValue="stage-0">
+                {PROCESS.map((stage, index) => (
+                  <AccordionItem key={stage.n} value={`stage-${index}`}>
+                    <AccordionTrigger index={stage.n}>{stage.title}</AccordionTrigger>
+                    <AccordionContent>{stage.body}</AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </SceneItem>
+          </Scene>
+        </TracingBeam>
       </div>
     </section>
   );

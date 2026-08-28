@@ -5,6 +5,7 @@ import { SectionHeader } from './ui.jsx';
 import { Card, CardTitle, CardDescription } from './ui/card.jsx';
 import { Badge } from './ui/badge.jsx';
 import { Scene, SceneItem, SOFT_SPRING } from './motion.jsx';
+import { CardSpotlight } from './aceternity/card-spotlight.jsx';
 
 export default function Capabilities() {
   const [focused, setFocused] = useState(null);
@@ -31,39 +32,41 @@ export default function Capabilities() {
               distance={18}
               className={capability.wide ? 'sm:col-span-2' : ''}
             >
-              <motion.div
-                tabIndex={0}
-                onHoverStart={() => setFocused(capability.id)}
-                onHoverEnd={() => setFocused(null)}
-                onFocus={() => setFocused(capability.id)}
-                onBlur={() => setFocused(null)}
-                animate={reduce ? undefined : { y: focused === capability.id ? -2 : 0 }}
-                transition={SOFT_SPRING}
-                className="group h-full"
-              >
-                <Card
-                  className={
-                    index % 2 === 0 && !capability.wide ? 'sm:border-r sm:border-white/[0.09]' : ''
-                  }
+              <CardSpotlight className="h-full">
+                <motion.div
+                  tabIndex={0}
+                  onHoverStart={() => setFocused(capability.id)}
+                  onHoverEnd={() => setFocused(null)}
+                  onFocus={() => setFocused(capability.id)}
+                  onBlur={() => setFocused(null)}
+                  animate={reduce ? undefined : { y: focused === capability.id ? -2 : 0 }}
+                  transition={SOFT_SPRING}
+                  className="group h-full"
                 >
-                  <div className="flex h-full max-w-xl flex-col justify-between gap-10">
-                    <span className="meta text-gray-600">
-                      {String(index + 1).padStart(2, '0')}
-                    </span>
-                    <div>
-                      <CardTitle>{capability.title}</CardTitle>
-                      <CardDescription>{capability.detail}</CardDescription>
-                      <div className="mt-5 flex flex-wrap gap-2">
-                        {capability.tags.map((tag) => (
-                          <Badge key={tag} variant="muted">
-                            {tag}
-                          </Badge>
-                        ))}
+                  <Card
+                    className={
+                      index % 2 === 0 && !capability.wide ? 'sm:border-r sm:border-white/[0.09]' : ''
+                    }
+                  >
+                    <div className="flex h-full max-w-xl flex-col justify-between gap-10">
+                      <span className="meta text-gray-600">
+                        {String(index + 1).padStart(2, '0')}
+                      </span>
+                      <div>
+                        <CardTitle>{capability.title}</CardTitle>
+                        <CardDescription>{capability.detail}</CardDescription>
+                        <div className="mt-5 flex flex-wrap gap-2">
+                          {capability.tags.map((tag) => (
+                            <Badge key={tag} variant="muted">
+                              {tag}
+                            </Badge>
+                          ))}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Card>
-              </motion.div>
+                  </Card>
+                </motion.div>
+              </CardSpotlight>
             </SceneItem>
           ))}
         </Scene>

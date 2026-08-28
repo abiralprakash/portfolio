@@ -1,5 +1,8 @@
 ﻿node_modules/
 .wrangler/
+
+# Vite build output for the /demo React app (built from ./demo)
+public/demo/
 .dev.vars
 .DS_Store
 .cursor/

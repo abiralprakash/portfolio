@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
-import { SYSTEMS } from '../data.js';
+import { SYSTEMS } from '../content/index.js';
 import { SectionHeader, StatusDot, STATE_STYLES, EASE } from './ui.jsx';
 import { Scene, SceneItem } from './motion.jsx';
 
@@ -171,7 +171,7 @@ export default function CurrentSystems() {
                   <motion.img
                     key={active.image}
                     src={active.image}
-                    alt={`${active.name} product preview`}
+                    alt={active.imageAlt || `${active.name} product preview`}
                     width={1600}
                     height={1000}
                     loading={activeIndex === 0 ? 'eager' : 'lazy'}

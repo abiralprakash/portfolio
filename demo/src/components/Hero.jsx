@@ -1,10 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowUpRight, MapPin } from 'lucide-react';
-import { IDENTITY, PROOF } from '../data.js';
+import { IDENTITY, PROOF } from '../content/index.js';
 import { scrollToId } from '../scroll.js';
 import { StatusDot } from './ui.jsx';
+import { Button } from './ui/button.jsx';
 import { Scene, SceneItem, MaskReveal, SceneLine, SOFT_SPRING } from './motion.jsx';
+import { Spotlight } from './aceternity/spotlight.jsx';
+import { BackgroundBeams } from './aceternity/background-beams.jsx';
+import { HoverBorderGradient } from './aceternity/hover-border-gradient.jsx';
 
 export default function Hero() {
   const constraintsRef = useRef(null);
@@ -22,9 +26,11 @@ export default function Hero() {
   return (
     <section
       id="identity"
-      className="relative flex min-h-[100svh] items-center overflow-hidden bg-[#0d1116] pt-20"
+      className="relative flex min-h-[100svh] items-center overflow-hidden bg-background pt-20"
     >
       <div className="bg-grid pointer-events-none absolute inset-0" aria-hidden="true" />
+      <Spotlight className="-top-40 left-0 md:-top-20 md:left-60" />
+      <BackgroundBeams className="opacity-40" />
       <div
         className="pointer-events-none absolute left-1/2 top-[42%] -translate-x-1/2 -translate-y-1/2"
         aria-hidden="true"
@@ -37,15 +43,15 @@ export default function Hero() {
       <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-10 px-6 py-10 md:px-10 lg:grid-cols-[1.18fr_0.82fr] lg:gap-20 lg:py-16">
         <Scene trigger="mount" delay={0.1} stagger={0.11}>
           <SceneItem className="mb-5 flex items-center gap-3">
-            <span className="meta text-[#00df8f]">01</span>
-            <SceneLine className="h-px w-8 bg-[#00df8f]/40" />
+            <span className="meta text-primary">01</span>
+            <SceneLine className="h-px w-8 bg-primary/40" />
             <span className="eyebrow">Identity</span>
           </SceneItem>
 
           <SceneItem className="mb-6 flex flex-wrap items-center gap-x-3 gap-y-2">
             <span className="meta text-white/75">{IDENTITY.name}</span>
-            <SceneLine className="h-px w-5 bg-[#00df8f]/60" />
-            <span className="meta text-[#00df8f]">{IDENTITY.role}</span>
+            <SceneLine className="h-px w-5 bg-primary/60" />
+            <span className="meta text-primary">{IDENTITY.role}</span>
           </SceneItem>
 
           <h1 className="max-w-3xl font-display text-[2.75rem] font-semibold leading-[0.92] tracking-[-0.055em] sm:text-6xl md:text-7xl lg:text-[5rem]">
@@ -54,7 +60,7 @@ export default function Hero() {
             </MaskReveal>
             <MaskReveal as="span" contentClassName="block pb-[0.08em]">
               <span className="text-outline">{IDENTITY.headlineOutline}</span>
-              <span className="text-[#00df8f]">.</span>
+              <span className="text-primary">.</span>
             </MaskReveal>
           </h1>
 
@@ -72,30 +78,22 @@ export default function Hero() {
           </SceneItem>
 
           <SceneItem className="mt-8 flex flex-wrap items-center gap-5">
-            <motion.button
-              type="button"
-              onClick={() => scrollToId('systems')}
-              whileHover={reduce ? undefined : { y: -2 }}
-              whileTap={reduce ? undefined : { scale: 0.98 }}
-              className="group flex min-h-12 items-center gap-2 rounded-full bg-[#00df8f] px-7 py-3.5 text-sm font-semibold text-[#0d1116] shadow-[0_12px_40px_-18px_rgba(0,223,143,0.8)] transition-colors hover:bg-[#18eca0]"
-            >
-              View current systems
-              <ArrowUpRight
-                size={18}
-                className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              />
-            </motion.button>
-            <button
-              type="button"
-              onClick={() => scrollToId('contact')}
-              className="group flex min-h-12 items-center gap-2 px-1 text-sm font-medium text-gray-300 transition-colors hover:text-white"
-            >
+            <motion.div whileHover={reduce ? undefined : { y: -2 }} whileTap={reduce ? undefined : { scale: 0.98 }}>
+              <Button type="button" onClick={() => scrollToId('systems')} className="group">
+                View current systems
+                <ArrowUpRight
+                  size={18}
+                  className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                />
+              </Button>
+            </motion.div>
+            <Button variant="link" type="button" onClick={() => scrollToId('contact')} className="group">
               Start a build
               <ArrowUpRight
                 size={16}
-                className="text-[#00df8f] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                className="text-primary transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
               />
-            </button>
+            </Button>
           </SceneItem>
 
           <SceneItem className="mt-10 grid max-w-xl grid-cols-3 gap-4 border-t border-white/10 pt-6 sm:gap-8">
@@ -119,11 +117,11 @@ export default function Hero() {
           className="relative flex items-center justify-center py-4 lg:min-h-[520px] lg:py-0"
         >
           <div
-            className="pointer-events-none absolute left-1/2 top-[-18vh] z-0 hidden h-[28vh] w-2 -translate-x-1/2 bg-gradient-to-b from-[#00df8f]/0 via-[#00df8f]/10 to-[#00df8f]/35 lg:block"
+            className="pointer-events-none absolute left-1/2 top-[-18vh] z-0 hidden h-[28vh] w-2 -translate-x-1/2 bg-gradient-to-b from-primary/0 via-primary/10 to-primary/35 lg:block"
             aria-hidden="true"
           />
           <div
-            className="pointer-events-none absolute left-1/2 top-8 z-0 hidden h-5 w-5 -translate-x-1/2 rounded-full border border-[#00df8f]/35 bg-[#14181f] lg:block"
+            className="pointer-events-none absolute left-1/2 top-8 z-0 hidden h-5 w-5 -translate-x-1/2 rounded-full border border-primary/35 bg-card lg:block"
             aria-hidden="true"
           />
 
@@ -154,47 +152,49 @@ export default function Hero() {
                   ? undefined
                   : { duration: 6, repeat: Infinity, ease: 'easeInOut' }
               }
-              className={`panel corner-ticks w-[260px] select-none bg-[#14181f] p-3 shadow-[0_32px_90px_-30px_rgba(0,0,0,0.9)] sm:w-[300px] ${
-                isDesktop ? 'cursor-grab' : ''
-              }`}
+              className={isDesktop ? 'cursor-grab' : ''}
             >
-              <div className="flex items-center justify-between px-2 pb-3 pt-1">
-                <span className="meta text-gray-500">BUILDER ID</span>
-                <StatusDot state="BUILDING" label="BUILDING" />
-              </div>
+              <HoverBorderGradient className="w-[260px] select-none shadow-[0_32px_90px_-30px_rgba(0,0,0,0.9)] sm:w-[300px]">
+                <div className="p-3">
+                  <div className="flex items-center justify-between px-2 pb-3 pt-1">
+                    <span className="meta text-gray-500">BUILDER ID</span>
+                    <StatusDot state="BUILDING" label="BUILDING" />
+                  </div>
 
-              <div className="overflow-hidden rounded-2xl border border-white/10">
-                <div className="relative aspect-[4/5] w-full">
-                  <img
-                    src="/demo-assets/portrait.jpg"
-                    alt="Portrait of Prakash Adhikari"
-                    width="640"
-                    height="960"
-                    fetchPriority="high"
-                    draggable="false"
-                    className="h-full w-full object-cover"
-                  />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0d1116] via-[#0d1116]/70 to-transparent p-5 pt-16">
-                    <p className="font-display text-2xl font-bold tracking-tight text-white">
-                      Prakash<span className="text-[#00df8f]">.</span>
-                    </p>
-                    <p className="mt-0.5 meta text-gray-400">{IDENTITY.role}</p>
+                  <div className="overflow-hidden rounded-2xl border border-white/10">
+                    <div className="relative aspect-[4/5] w-full">
+                      <img
+                        src={IDENTITY.portrait || '/demo-assets/portrait.jpg'}
+                        alt={IDENTITY.portraitAlt || `Portrait of ${IDENTITY.name}`}
+                        width="640"
+                        height="960"
+                        fetchPriority="high"
+                        draggable="false"
+                        className="h-full w-full object-cover"
+                      />
+                      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background via-background/70 to-transparent p-5 pt-16">
+                        <p className="font-display text-2xl font-bold tracking-tight text-white">
+                          Prakash<span className="text-primary">.</span>
+                        </p>
+                        <p className="mt-0.5 meta text-gray-400">{IDENTITY.role}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-y-2 px-2 py-3">
+                    <span className="flex items-center gap-1.5 meta text-gray-500">
+                      <MapPin size={11} className="text-primary" />
+                      {IDENTITY.location}
+                    </span>
+                    <span className="meta text-right text-gray-500">{IDENTITY.builderId}</span>
+                    <span className="meta text-gray-500">FOCUS · LEGALTECH</span>
+                    <span className="meta text-right text-gray-600">
+                      {IDENTITY.version}
+                      {isDesktop ? ' · DRAG' : ''}
+                    </span>
                   </div>
                 </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-y-2 px-2 py-3">
-                <span className="flex items-center gap-1.5 meta text-gray-500">
-                  <MapPin size={11} className="text-[#00df8f]" />
-                  {IDENTITY.location}
-                </span>
-                <span className="meta text-right text-gray-500">{IDENTITY.builderId}</span>
-                <span className="meta text-gray-500">FOCUS · LEGALTECH</span>
-                <span className="meta text-right text-gray-600">
-                  {IDENTITY.version}
-                  {isDesktop ? ' · DRAG' : ''}
-                </span>
-              </div>
+              </HoverBorderGradient>
             </motion.div>
           </SceneItem>
         </Scene>

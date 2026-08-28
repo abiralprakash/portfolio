@@ -9,7 +9,7 @@ import Contact from './components/Contact.jsx';
 
 export default function App() {
   return (
-    <div className="relative min-h-screen bg-[#0d1116] text-white antialiased selection:bg-[#00df8f] selection:text-[#0d1116]">
+    <div className="relative min-h-screen bg-background text-foreground antialiased selection:bg-primary selection:text-primary-foreground">
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-[#00df8f] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-[#0d1116]"

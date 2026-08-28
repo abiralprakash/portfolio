@@ -1,0 +1,41 @@
+{
+  "name": "prakash-portfolio-cms",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Payload CMS authoring layer for the Prakash Adhikari portfolio and Personal Product Lab.",
+  "scripts": {
+    "dev": "next dev --port 3000",
+    "build": "next build",
+    "start": "next start --port 3000",
+    "generate:types": "payload generate:types",
+    "generate:importmap": "payload generate:importmap",
+    "migrate": "payload migrate",
+    "seed": "tsx scripts/seed.ts",
+    "export": "tsx scripts/export-content.ts"
+  },
+  "dependencies": {
+    "@payloadcms/db-sqlite": "3.88.0",
+    "@payloadcms/next": "3.88.0",
+    "@payloadcms/richtext-lexical": "3.88.0",
+    "@payloadcms/storage-s3": "3.88.0",
+    "@payloadcms/ui": "3.88.0",
+    "dotenv": "^17.4.2",
+    "graphql": "^16.8.1",
+    "next": "16.3.3",
+    "payload": "3.88.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "sharp": "^0.34.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

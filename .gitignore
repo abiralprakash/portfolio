@@ -9,3 +9,11 @@ public/demo/
 *.log
 .env
 .env.*
+!cms/.env.example
+cms/node_modules/
+cms/.next/
+cms/*.db
+cms/*.db-journal
+cms/*.db-wal
+cms/*.db-shm
+cms/media/

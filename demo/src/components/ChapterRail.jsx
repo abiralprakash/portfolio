@@ -1,14 +1,6 @@
 import { useEffect, useState } from 'react';
+import { CHAPTERS } from '../content/index.js';
 import { scrollToId } from '../scroll.js';
-
-const CHAPTERS = [
-  { n: '01', id: 'identity', label: 'Identity' },
-  { n: '02', id: 'systems', label: 'Systems' },
-  { n: '03', id: 'process', label: 'Process' },
-  { n: '04', id: 'capabilities', label: 'Capabilities' },
-  { n: '05', id: 'now', label: 'Now' },
-  { n: '06', id: 'contact', label: 'Contact' },
-];
 
 export default function ChapterRail() {
   const [active, setActive] = useState('identity');
@@ -36,6 +28,7 @@ export default function ChapterRail() {
     >
       {CHAPTERS.map((chapter) => {
         const isActive = active === chapter.id;
+        const n = chapter.index;
         return (
           <button
             key={chapter.id}
@@ -58,7 +51,7 @@ export default function ChapterRail() {
                 isActive ? 'text-[#00df8f]' : 'text-gray-500 group-hover:text-gray-300'
               }`}
             >
-              {chapter.n}
+              {n}
             </span>
           </button>
         );

@@ -1,4 +1,4 @@
-import { NOW } from '../data.js';
+import { NOW } from '../content/index.js';
 import { SectionHeader, StatusDot } from './ui.jsx';
 import { Scene, SceneItem } from './motion.jsx';
 

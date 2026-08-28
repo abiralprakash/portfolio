@@ -1,17 +1,12 @@
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
-import { IDENTITY } from '../data.js';
+import { IDENTITY, CHAPTERS } from '../content/index.js';
 import { scrollToId } from '../scroll.js';
 import { Outline } from './ui.jsx';
+import { Button } from './ui/button.jsx';
 import { Scene, SceneItem, MaskReveal, SceneLine, EASE } from './motion.jsx';
 
-const MENU = [
-  { label: 'Identity', id: 'identity' },
-  { label: 'Systems', id: 'systems' },
-  { label: 'Process', id: 'process' },
-  { label: 'Capabilities', id: 'capabilities' },
-  { label: 'Now', id: 'now' },
-];
+const MENU = CHAPTERS.filter((chapter) => chapter.id !== 'contact');
 
 export default function Contact() {
   const reduce = useReducedMotion();
@@ -56,20 +51,23 @@ export default function Contact() {
             </SceneItem>
 
             <SceneItem>
-              <motion.a
-                href={`mailto:${IDENTITY.email}?subject=Have%20a%20system%20in%20mind`}
+              <motion.div
                 whileHover={reduce ? undefined : { scale: 1.03, y: -2 }}
                 whileTap={reduce ? undefined : { scale: 0.97 }}
                 transition={{ duration: 0.2, ease: EASE }}
-                className="group mt-8 inline-flex min-h-12 items-center gap-3 rounded-full bg-[#00df8f] px-7 py-3.5 text-sm font-semibold text-[#0d1116] shadow-[0_12px_40px_-18px_rgba(0,223,143,0.8)] hover:bg-[#18eca0]"
+                className="mt-8 inline-flex"
               >
-                <span className="h-2 w-2 rounded-full bg-[#0d1116]" />
-                {IDENTITY.email}
-                <ArrowUpRight
-                  size={16}
-                  className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                />
-              </motion.a>
+                <Button asChild className="group">
+                  <a href={`mailto:${IDENTITY.email}?subject=Have%20a%20system%20in%20mind`}>
+                    <span className="h-2 w-2 rounded-full bg-primary-foreground" />
+                    {IDENTITY.email}
+                    <ArrowUpRight
+                      size={16}
+                      className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                    />
+                  </a>
+                </Button>
+              </motion.div>
             </SceneItem>
 
             <SceneItem as="p" className="mt-6 meta text-[#00df8f]">Available for selected work</SceneItem>

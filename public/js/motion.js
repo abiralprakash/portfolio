@@ -125,7 +125,7 @@
   /* —— Image reveal (clip + blur clear) —— */
   function initImageReveals() {
     const imgs = document.querySelectorAll(
-      '.work-media img, .featured-media img, .wf-stage img, .demo-media img, .proof-strip img'
+      '.work-media img, .featured-media img, .wf-stage img, .demo-media img, .proof-strip img, .gallery-grid img, .case-hero-media img, .about-photo img'
     );
     if (!imgs.length) return;
     imgs.forEach(function (img) {
@@ -137,6 +137,12 @@
       });
       return;
     }
+    function markMediaIn(img) {
+      const rect = img.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.96 && rect.bottom > 0) {
+        img.classList.add('is-in');
+      }
+    }
     const io = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (en) {
@@ -145,11 +151,22 @@
           io.unobserve(en.target);
         });
       },
-      { threshold: 0.2, rootMargin: '0px 0px -8% 0px' }
+      { threshold: 0.12, rootMargin: '0px 0px 10% 0px' }
     );
     imgs.forEach(function (img) {
+      markMediaIn(img);
       io.observe(img);
     });
+    requestAnimationFrame(function () {
+      imgs.forEach(markMediaIn);
+    });
+    window.addEventListener(
+      'load',
+      function () {
+        imgs.forEach(markMediaIn);
+      },
+      { once: true }
+    );
   }
 
   /* —— Work row peek: System / Architecture / Impact —— */

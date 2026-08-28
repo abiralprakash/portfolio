@@ -48,7 +48,7 @@ Motion enhances layout; layout still works with motion off.
 
 ## Left (optional next)
 
-- Commit + push `demo/` + `public/demo-assets/` (required before cloud overnight agents can see work)
+- ~~Commit + push `demo/` + `public/demo-assets/`~~ **Done** — `4630e0b`, deployed to Workers
 - Further compress shared `/assets/shots/proof` PNGs used by the static site (demo no longer depends on them for systems)
 - Optional visual QA pass on real device (iOS Safari)
 - Cloud Automations draft still awaiting user approval / editor open after push
